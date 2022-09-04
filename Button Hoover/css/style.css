@@ -1,0 +1,59 @@
+/* Created By Mattia.V */
+
+
+/* Variabili dei colori */
+:root{
+    --main--color:rgba(0, 11, 59, 0.945);
+    --main2--color:rgba(0, 24, 129, 0.747);
+    --button--color:rgb(255, 145, 0);
+    --hoover--color:rgb(255, 174, 0);
+}
+
+/* Ora diamo un pò di stile al bottone! */
+
+body{
+    background-color: var(--main--color);
+}
+
+.container{
+    margin-top: 400px;
+    margin-left: 800px;
+}
+
+
+.btn{
+    background-color: var(--main2--color);
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    text-align: center;
+
+    /* diamo un pò di stile al nostro bottone */
+    border: 3px solid var(--button--color);
+    border-radius: 50px;
+    color: var(--button--color);
+
+    /* allarghiamo, e alziamo il nostro bottone */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    /* diamo un tempo di transizione al bottone */
+    transition: .4s;    /* 4 secondi */
+}
+
+
+/* creiamo un Hover per il nostro bottone :) */
+.btn:hover{
+    background-color: var(--button--color);
+    box-shadow: 0 0 10px 10px white;
+    color: white;
+
+    /* facciamo ingrandire il nostro bottone :) */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
